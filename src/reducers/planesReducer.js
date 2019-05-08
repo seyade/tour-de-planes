@@ -6,8 +6,8 @@ export default (state = [], action) => {
 
   switch (action.type) {
     case FETCH_ALL_PLANES:
-      console.log('PLANES::', action.payload);
-      return [...state, action.payload];
+      console.log('REDUCER::PLANES:: ', action.payload);
+      return action.payload;
 
     default:
       return state;

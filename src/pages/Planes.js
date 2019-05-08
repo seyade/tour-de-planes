@@ -8,13 +8,22 @@ class Planes extends Component {
   }
 
   render() {
+    console.log('COMP::PLANES ', this.props.planes);
+
     return (
       <div>
         <h4>Planes</h4>
 
         <ul>
-          {this.props.planes.map(plane => {
-            return <li>{plane.name}</li>;
+          {this.props.planes.map((plane, index) => {
+            return (
+              <li key={index}>
+                <article>
+                  <h3>Model: {plane.planeModelCode}</h3>
+                  <p>Range: {plane.specification.range}</p>
+                </article>
+              </li>
+            );
           })}
         </ul>
       </div>

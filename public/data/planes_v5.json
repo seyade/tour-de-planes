@@ -1,0 +1,200 @@
+{
+  "name": "Tour de Planes",
+  "author": "Avicenna Digital and Around & Co. Creatives",
+  "planes": {
+    "data": [
+      {
+        "planeId": "1",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 318-100",
+        "planeModel": "A318",
+        "planeModelCode": "A318-100",
+        "engineNumber": "2",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "318",
+        "iataCodeLong": "A318",
+        "description": "",
+        "specification": {
+          "length": "31.44 m",
+          "wingspan": "34.10 m",
+          "height": "12.56 m",
+          "range": "5750 km",
+          "speed": "M0.82",
+          "typicalSeating": "107",
+          "maxTakeoffWeight": "68 t",
+          "maxLandingWeight": "57.50 t",
+          "maxFuelCapacity": "24210 litres"
+        }
+      },
+      {
+        "planeId": "2",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 319-neo",
+        "planeModel": "A319",
+        "planeModelCode": "A319-neo",
+        "engineNumber": "2",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "319",
+        "iataCodeLong": "A319",
+        "description": "",
+        "specification": {
+          "length": "33.84 m",
+          "wingspan": "35.80 m",
+          "height": "11.76 m",
+          "range": "6850 km",
+          "speed": "M0.82",
+          "typicalSeating": "140",
+          "maxTakeoffWeight": "75.50 t",
+          "maxLandingWeight": "63.90 t",
+          "maxFuelCapacity": "26730 litres"
+        }
+      },
+      {
+        "planeId": "3",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 320-neo",
+        "planeModel": "A320",
+        "planeModelCode": "A320-neo",
+        "engineNumber": "2",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "320",
+        "iataCodeLong": "A320",
+        "description": "",
+        "specification": {
+          "length": "37.57 m",
+          "wingspan": "35.80 m",
+          "height": "11.76 m",
+          "range": "6300 km",
+          "speed": "M0.82",
+          "typicalSeating": "165",
+          "maxTakeoffWeight": "79.00 t",
+          "maxLandingWeight": "64.40 t",
+          "maxFuelCapacity": "26730 litres"
+        }
+      },
+      {
+        "planeId": "4",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 321-neo",
+        "planeModel": "A321",
+        "planeModelCode": "A321-neo",
+        "engineNumber": "2",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "321",
+        "iataCodeLong": "A321",
+        "description": "",
+        "specification": {
+          "length": "44.51 m",
+          "wingspan": "35.80 m",
+          "height": "11.76 m",
+          "range": "7400 km",
+          "speed": "M0.82",
+          "typicalSeating": "206",
+          "maxTakeoffWeight": "97.00 t",
+          "maxLandingWeight": "79.20 t",
+          "maxFuelCapacity": "32940 litres"
+        }
+      },
+      {
+        "planeId": "5",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 330-800",
+        "planeModel": "A330",
+        "planeModelCode": "A330-800",
+        "engineNumber": "2",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "330",
+        "iataCodeLong": "A330",
+        "description": "",
+        "specification": {
+          "length": "58.82 m",
+          "wingspan": "64 m",
+          "height": "17.39 m",
+          "range": "15094 km",
+          "speed": "M0.86",
+          "typicalSeating": "257",
+          "maxTakeoffWeight": "251.00 t",
+          "maxLandingWeight": "186.00 t",
+          "maxFuelCapacity": "139090 litres"
+        }
+      },
+      {
+        "planeId": "6",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 340-500",
+        "planeModel": "A340",
+        "planeModelCode": "A340-500",
+        "engineNumber": "4",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "340",
+        "iataCodeLong": "A340",
+        "description": "",
+        "specification": {
+          "length": "67.93 m",
+          "wingspan": "63.45 m",
+          "height": "17.53 m",
+          "range": "16670 km",
+          "speed": "M0.86",
+          "typicalSeating": "293",
+          "maxTakeoffWeight": "380.00 t",
+          "maxLandingWeight": "246.00 t",
+          "maxFuelCapacity": "222850 litres"
+        }
+      },
+      {
+        "planeId": "7",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 350-900",
+        "planeModel": "A350",
+        "planeModelCode": "A350-900",
+        "engineNumber": "2",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "359",
+        "iataCodeLong": "A359",
+        "description": "",
+        "specification": {
+          "length": "66.80 m",
+          "wingspan": "64.75 m",
+          "height": "17.05 m",
+          "range": "15000 km",
+          "speed": "M0.89",
+          "typicalSeating": "325",
+          "maxTakeoffWeight": "280 t",
+          "maxLandingWeight": "207 t",
+          "maxFuelCapacity": "141000 litres"
+        }
+      },
+      {
+        "planeId": "8",
+        "manufacturer": "Airbus",
+        "planeType": "Airbus 380-800",
+        "planeModel": "A380",
+        "planeModelCode": "A380-800",
+        "engineNumber": "4",
+        "engineType": "JET",
+        "status": "active",
+        "iataCode": "380",
+        "iataCodeLong": "A388",
+        "description": "",
+        "specification": {
+          "length": "72.72 m",
+          "wingspan": "79.75 m",
+          "height": "24.09 m",
+          "range": "14800 km",
+          "speed": "M0.89",
+          "typicalSeating": "575",
+          "maxTakeoffWeight": "575.00 t",
+          "maxLandingWeight": "391.00 t",
+          "maxFuelCapacity": "323546 litres"
+        }
+      }
+    ]
+  }
+}

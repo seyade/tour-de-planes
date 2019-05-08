@@ -14,8 +14,6 @@ const API_URL = {
   IATACode: `https://iatacodes.org/api/v6/aircrafts?api_key=ee578ab6-2132-41ff-a311-c3b152941942`,
 };
 
-// IATACode
-
 export const fetchAllPlanes_old = () => {
   axios.get(API_URL).then(response => {
     return {
@@ -41,21 +39,28 @@ export const fetchAllPlanes_temp = () => dispatch => {
     .catch(error => console.log('Oops!!', error));
 };
 
-export function fetchAllPlanes() {
-  console.log('FETCH PLANES TEMP!!!!!!!');
+// export function fetchAllPlanes() {
+//   console.log('FETCH PLANES TEMP!!!!!!!');
 
-  return function(dispatch) {
-    return axios
-      .get(API_URL.IATACode, {
-        'Content-Type': 'application/json',
-      })
-      .then(res => {
-        console.log('FETCH PLANES RESP!!!!!!!', res);
+//   debugger;
+//   return function(dispatch) {
+//     return axios.get(planesData).then(res => {
+//       console.log('FETCH PLANES RESP!!!!!!!', res);
 
-        dispatch({
-          type: FETCH_ALL_PLANES,
-          payload: res.data,
-        });
-      });
-  };
-}
+//       dispatch({
+//         type: FETCH_ALL_PLANES,
+//         payload: res.planes.data,
+//       }).catch(error => console.log('FETCH ERROR ====> ', error));
+//     });
+//   };
+// }
+
+export const fetchAllPlanes = () => dispatch => {
+  return axios.get('data/planes_v5.json').then(res => {
+    console.log('FETCH PLANES RESP!!!!!!!', res);
+    dispatch({
+      type: FETCH_ALL_PLANES,
+      payload: res.data.planes.data,
+    });
+  });
+};

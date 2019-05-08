@@ -10,7 +10,7 @@ const expandup = keyframes`
 
   100% {
     opacity: 1;
-    height: 70vh;
+    height: 75vh;
   }
 `;
 
@@ -79,6 +79,7 @@ const UICard = styled.div.attrs({
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
     opacity: 0;
 
     animation: ${fadein} 500ms 1000ms forwards ease-in-out;
@@ -86,14 +87,18 @@ const UICard = styled.div.attrs({
 
   .ui-card__title {
     position: absolute;
-    top: 0;
+    top: 5vh;
     margin: 0;
-    font-size: 128px;
+    font-size: 192px;
     font-weight: 900;
     color: #eaeaea;
     opacity: 0;
 
     animation: ${fadein} 500ms 1000ms forwards ease-in-out;
+  }
+
+  .ui-card__text {
+    line-height: 1.4;
   }
 
   .ui-card__image {
@@ -107,6 +112,44 @@ const UICard = styled.div.attrs({
       overflow: hidden;
     }
   }
+
+  .ui-card__action {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: #444;
+      text-decoration: none;
+      width: 50px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0;
+
+      animation: ${fadein} 500ms 1500ms forwards ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:first-child {
+        margin-left: -30px;
+      }
+
+      &:last-child {
+        margin-right: -30px;
+      }
+    }
+  }
 `;
 
 const Card = props => {
@@ -117,7 +160,7 @@ const Card = props => {
       <div className="ui-card__content">
         <div className="ui-card__col">
           <h3>Specs</h3>
-          <p>
+          <p className="ui-card__text">
             Africa’s aviation sector is bogged down by many headwinds — weak
             infrastructure, poor connectivity, high ticket prices and low
             passenger volumes. Hassan El-Houry, CEO of National Aviation
